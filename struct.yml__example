@@ -1,0 +1,16 @@
+---
+salsamixer:
+
+  name:
+    - "do salsa20 stuff on some YAML things"
+  executions:
+    HONKSET:
+      datasegment:
+        - "Honk honk honk"
+       eseg:
+        - 52e323fc8d924e2290f02ceb
+       salsafalconE:
+        - "https://mycoolsalsafalcon/api/encrypt/1"
+       salsafalconD:
+        - "https://mycoolsalsafalcon/api/decrypt/funtimeswithuricontexts"
+...     
