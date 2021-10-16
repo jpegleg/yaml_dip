@@ -2,7 +2,7 @@
 salsamixer:
 
   name:
-    - "do salsa20 stuff on some YAML things"
+    - "do salsa20 on some YAML values"
   executions:
     HONKSET:
       datasegment:
