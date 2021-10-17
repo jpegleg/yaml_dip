@@ -29,11 +29,11 @@ salsamixer:
     HONKSET:
       datasegment:
         - "Honk honk honk"
-       eseg:
+      eseg:
         - 52e323fc8d924e2290f02ceb
-       salsafalconE:
+      salsafalconE:
         - "https://mycoolsalsafalcon/api/encrypt/1"
-       salsafalconD:
+      salsafalconD:
         - "https://mycoolsalsafalcon/api/decrypt/funtimeswithuricontexts"
 ...   
 ```
@@ -50,11 +50,11 @@ salsamixer:
     HONKSET:
       datasegment:
         - "Honk honk honk"
-       eseg:
+      eseg:
         - 52e323fc8d924e2290f02ceb
-       salsafalconE:
+      salsafalconE:
         - "https://mycoolsalsafalcon/api/encrypt/1"
-       salsafalconD:
+      salsafalconD:
         - "https://mycoolsalsafalcon/api/decrypt/funtimeswithuricontexts"
     HONKSET2:
       datasegment:
@@ -80,12 +80,12 @@ salsamixer:
     HONKSET:
       datasegment:
         - "Honk honk honk"
-       salsafalconE:
+      salsafalconE:
         - "https://mycoolsalsafalcon/api/encrypt/1"
     HONKSET2:
       datasegment:
         - "Honk honk honk honk honk honk 2"
-       salsafalconE:
+      salsafalconE:
         - "https://mycoolsalsafalcon/api/encrypt/2"     
 ... 
 ```
