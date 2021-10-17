@@ -48,7 +48,7 @@ class ProcessSalsa():
                         r = requests.post(callurl[2:-2], data=payload, headers=headers)
                         resp = binascii.hexlify(r.content)
                         timestamp = str(timestamper())
-                        print(timestamp, '-> Recv round encrypted: ', resp)
+                        print(timestamp, '-> Recv encrypted: ', resp)
                     except Exception as err:
                         timestamp = str(timestamper())
                         errstr = str(err)
@@ -82,7 +82,7 @@ class DecryptSalsa():
                         r = requests.post(callurl[2:-2], data=bytes(payload), headers=headers)
                         resp = r.content
                         timestamp = str(timestamper())
-                        print(timestamp, '-> Recv round 1 decrypt: ', resp)
+                        print(timestamp, '-> Recv decrypted: ', resp)
                     except Exception as err:
                         timestamp = str(timestamper())
                         errstr = str(err)
