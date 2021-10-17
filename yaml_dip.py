@@ -21,8 +21,7 @@ def timestamper():
 
 class ProcessSalsa():
     """ Send data to a salsa_falcon service to encrypt it twice. """
-    def encrypt():
-        
+    def encrypt():      
         try:
             stream = open('struct.yml', 'r')
             data = yaml.safe_load(stream)
