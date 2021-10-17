@@ -46,11 +46,10 @@ class ProcessSalsa():
                         timestamp = str(timestamper())
                         uricontext = callurl[2:-2].encode('utf-8')
                         urihash = hashlib.sha256(uricontext).hexdigest()
-                        print(timestamp, ' Hash of input URL: ',  urihash)
                         r = requests.post(callurl[2:-2], data=payload, headers=headers)
                         resp = binascii.hexlify(r.content)
                         timestamp = str(timestamper())
-                        print(timestamp, '-> Recv output: ', resp)
+                        print(timestamp, urihash[0:12], '-> Recv output: ', resp)
                     except Exception as err:
                         timestamp = str(timestamper())
                         errstr = str(err)
@@ -81,11 +80,10 @@ class DecryptSalsa():
                         payload = binascii.unhexlify(datasend)
                         uricontext = callurl[2:-2].encode('utf-8')
                         urihash = hashlib.sha256(uricontext).hexdigest()
-                        print(timestamp, ' Hash of input URL: ',  urihash)
                         r = requests.post(callurl[2:-2], data=bytes(payload), headers=headers)
                         resp = r.content
                         timestamp = str(timestamper())
-                        print(timestamp, '-> Recv output: ', resp)
+                        print(timestamp, urihash[0:12], '-> Recv output: ', resp)
                     except Exception as err:
                         timestamp = str(timestamper())
                         errstr = str(err)
