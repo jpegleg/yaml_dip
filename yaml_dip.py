@@ -38,7 +38,7 @@ class ProcessSalsa():
                     timestamp = str(timestamper())
                     stoken = 'honkhonktoken'
                     headers = {'X-API-TOKEN': stoken}
-                    payload = {'vcip': mip}
+                    payload = mip
                     try:
                         callurl = str(salsafalcon)
                         timestamp = str(timestamper())
