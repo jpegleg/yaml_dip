@@ -22,13 +22,15 @@ def timestamper():
 class ProcessSalsa():
     """ Send data to a salsa_falcon service to encrypt it twice. """
     def encrypt():
+        
         try:
             stream = open('struct.yml', 'r')
             data = yaml.safe_load(stream)
             timestamp = str(timestamper())
             print(timestamp, '-> Loaded struct.yml for salsa20...')
         except Exception as err:
-            print('ERROR - ', err)
+            print(timestamp, ' ERROR - ', err)
+            
         for salsafalcon in find(data, 'salsafalconE'):
             timestamp = str(timestamper())
             print(timestamp, '<- Sending to salsa falcon.')
