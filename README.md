@@ -9,7 +9,7 @@ An HTTPS client app template in python with requests module, built for the salsa
 #### Replace the URI context /api/encrypt/1 etc, with the URI contexts you configure in your salsa_falcon routes.
 
 This client tempalte takes in a YAML file called struct.yml which defines encryption and decryption salsa falcon endpoints
-as well as data to encrypt and decrypt.
+as well as data to encrypt and decrypt. The program could be expanded to have multiple yaml files loaded and processed etc.
 
 ```
 $ python yaml_dip.py
