@@ -40,6 +40,10 @@ $
 ### The purpose of this is for tracking and audit, without exposing the URI context of the falcon route to the output.
 ### That hash is only truncated to save disk space in the output, you can remove the truncate and print the full SHA256 if you like.
 #### Change urihash[0:12] to urihash in the code to print the full hash value.
+#### To manually generate the truncated hash on the command line in linux:
+```
+echo -n "https://mycoolsalsafalcon:8000/api/encrypt/0" | sha256sum | cut -c1-12
+```
 
 The segments to decrypt are defined as eseg while the data segments to encrypt are labelled datasegment:
 
