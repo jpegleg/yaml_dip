@@ -36,11 +36,11 @@ class ProcessSalsa():
             print(timestamp, '<- Sending to salsa falcon.')
 
             for datasegment in find(data, 'datasegment'):
-                for mip in datasegment:
+                for datasend in datasegment:
                     timestamp = str(timestamper())
                     stoken = 'honkhonktoken'
                     headers = {'X-API-TOKEN': stoken}
-                    payload = mip
+                    payload = datasend
                     try:
                         callurl = str(salsafalcon)
                         timestamp = str(timestamper())
@@ -71,13 +71,13 @@ class DecryptSalsa():
             print(timestamp, '<- Sending to salsa falcon.')
 
             for eseg in find(data, 'eseg'):
-                for mip in eseg:
+                for datasend in eseg:
                     timestamp = str(timestamper())
                     stoken = 'honkhonktoken'
                     headers = {'X-API-TOKEN': stoken}
                     try:
                         callurl = str(salsafalcon)
-                        payload = binascii.unhexlify(mip)
+                        payload = binascii.unhexlify(datasend)
                         uricontext = callurl[2:-2].encode('utf-8')
                         urihash = hashlib.sha256(uricontext).hexdigest()
                         print(timestamp, ' Hash of decrypt URL: ',  urihash)
