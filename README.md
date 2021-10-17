@@ -67,3 +67,29 @@ salsamixer:
         - "https://mycoolsalsafalcon/api/decrypt/funtimeswithuricontexts2"        
 ...   
 ```
+
+If you only want to decrypt or only want to encrypt, just leave out the YAML keys you don't need:
+
+```
+---
+salsamixer:
+
+  name:
+    - "do salsa20 on some YAML values"
+  executions:
+    HONKSET:
+      datasegment:
+        - "Honk honk honk"
+       salsafalconE:
+        - "https://mycoolsalsafalcon/api/encrypt/1"
+       salsafalconD:
+        - "https://mycoolsalsafalcon/api/decrypt/funtimeswithuricontexts"
+    HONKSET2:
+      datasegment:
+        - "Honk honk honk honk honk honk 2"
+       salsafalconE:
+        - "https://mycoolsalsafalcon/api/encrypt/2"
+       salsafalconD:
+        - "https://mycoolsalsafalcon/api/decrypt/funtimeswithuricontexts2"        
+... 
+```
