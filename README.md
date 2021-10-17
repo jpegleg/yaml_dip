@@ -7,7 +7,7 @@ This client tempalte takes in a YAML file called struct.yml which defines encryp
 as well as data to encrypt and decrypt.
 
 ```
-python yaml_dip.py
+$ python yaml_dip.py
 2021-10-16 18:04:58.404194 -> Loaded struct.yml for salsa20...
 2021-10-16 18:04:58.404258 <- Sending to salsa falcon.
 2021-10-16 18:04:58.404282  Hash of encrypt URL:  df017879755179a83a2aa12c7617b7548616ae9554684140ea550283cf01da7e
