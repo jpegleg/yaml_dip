@@ -6,6 +6,7 @@ An HTTPS client app template in python with requests module, built for the salsa
 ## This is a template, edit it from here for a real use. 
 #### Probably want to make that api token something more useful.
 #### Replace mycoolsalsafalcon in the template with your salsa_falcon server DNS name or IP.
+#### Replace the URI context /api/encrypt/1 etc, with the URI contexts you configure in your salsa_falcon routes.
 
 This client tempalte takes in a YAML file called struct.yml which defines encryption and decryption salsa falcon endpoints
 as well as data to encrypt and decrypt.
