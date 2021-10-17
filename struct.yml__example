@@ -7,10 +7,10 @@ salsamixer:
     HONKSET:
       datasegment:
         - "Honk honk honk"
-       eseg:
+      eseg:
         - 52e323fc8d924e2290f02ceb
-       salsafalconE:
+      salsafalconE:
         - "https://mycoolsalsafalcon/api/encrypt/1"
-       salsafalconD:
+      salsafalconD:
         - "https://mycoolsalsafalcon/api/decrypt/funtimeswithuricontexts"
 ...     
