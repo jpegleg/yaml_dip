@@ -1,4 +1,4 @@
-# yaml_dip
+# yaml_dip 🌶️ 🦅
 An HTTPS client app template in python with requests module, built for the salsa_falcon.
 
 ## See https://github.com/jpegleg/salsa_falcon
