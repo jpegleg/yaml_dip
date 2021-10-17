@@ -21,7 +21,8 @@ def timestamper():
 
 class ProcessSalsa():
     """ Send data to a salsa_falcon service to encrypt it twice. """
-    def encrypt():      
+    def encrypt():
+        """ Encrypt datasegment with remote salsa20 as defined in YAML."""
         try:
             stream = open('struct.yml', 'r')
             data = yaml.safe_load(stream)
@@ -59,6 +60,7 @@ class ProcessSalsa():
 class DecryptSalsa():
     """ Send data to a salsa_falcon service to decrypt it twice. """
     def decrypt():
+        """ Decrypt eseg with remote salsa falcon as defined in YAML."""
         try:
             stream = open('struct.yml', 'r')
             data = yaml.safe_load(stream)
