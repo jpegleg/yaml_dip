@@ -37,6 +37,9 @@ $ python yaml_dip.py
 $
 
 ```
+### Note the second column of the output is a truncated SHA256 of the falcon server URI context used.
+### The purpose of this is for tracking and audit, without exposing the URI context of the falcon route to the output.
+
 
 The segments to decrypt are defined as eseg while the data segments to encrypt are labelled datasegment:
 
