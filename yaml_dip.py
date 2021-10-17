@@ -78,7 +78,7 @@ class DecryptSalsa():
                         payload = binascii.unhexlify(mip)
                         uricontext = callurl[2:-2].encode('utf-8')
                         urihash = hashlib.sha256(uricontext).hexdigest()
-                        print(timestamp, ' Hash of deecrypt URL: ',  urihash)
+                        print(timestamp, ' Hash of decrypt URL: ',  urihash)
                         r = requests.post(callurl[2:-2], data=bytes(payload), headers=headers)
                         resp = r.content
                         timestamp = str(timestamper())
