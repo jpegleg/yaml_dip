@@ -93,9 +93,9 @@ class DecryptSalsa():
 
 
 if __name__ == '__main__':
-    KRAKEN = threading.Thread(target=ProcessSalsa.encrypt(), name='Tide')
+    KRAKEN = threading.Thread(target=ProcessSalsa.encrypt)
     KRAKEN.start()
-    SPEAR = threading.Thread(target=DecryptSalsa.decrypt(), name='Wave')
+    SPEAR = threading.Thread(target=DecryptSalsa.decrypt)
     SPEAR.start()
     KRAKEN.join()
     SPEAR.join()
