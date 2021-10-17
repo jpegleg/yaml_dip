@@ -118,4 +118,4 @@ salsamixer:
 ```
 
 The salsa falcon/s used could be local and/or remote. I like to have remote salsa falcons with encrypt only set ups, and put the decrypt api elsewhere.
-This creates nice control over the decryption mechanism and more importantly, the secret key is never on the client or build systems.
+This creates nice control over the decryption mechanism and more importantly, the secret key and the ability to decrypt is never on the client or build systems, even if the original plaintext is on disk when the YAML stream is loaded.
