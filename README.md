@@ -14,7 +14,7 @@ $ python yaml_dip.py
 2021-10-16 18:04:58.557214 -> Recv output:  b'32cad2115922c71197af23f30a71374383cdd80c090c'
 2021-10-16 18:04:58.565548 <- Sending to salsa falcon.
 2021-10-16 18:04:58.565592  Hash of input API URL:  b32429a1b4f156f30c5d4ccc0d066d91cb3301b445c9ca3c881098844b4f3aca
-2021-10-16 18:04:58.708676 -> Recv output:  b'My message that was encrypted in the YAML is decrypted here to standard out'
+2021-10-16 18:04:58.708676 -> Recv output:  b'My message that was encrypted in the YAML is decrypted here as example.'
 ```
 
 The segments to decrypt are defined as eseg while the data segments to encrypt are labelled datasegment:
