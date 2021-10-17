@@ -38,7 +38,8 @@ $
 ```
 ### Note the second column of the output is a truncated SHA256 of the falcon server URI context used.
 ### The purpose of this is for tracking and audit, without exposing the URI context of the falcon route to the output.
-
+### That hash is only truncated to save disk space in the output, you can remove the truncate and print the full SHA256 if you like.
+#### Change urihash[0:12] to urihash in the code to print the full hash value.
 
 The segments to decrypt are defined as eseg while the data segments to encrypt are labelled datasegment:
 
