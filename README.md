@@ -109,9 +109,40 @@ datasegment:
   - "Further things we want to send around."
   - "Honk honk honk honk honk honk 2"
 salsafalconE:
-  - "https://mycoolsalsafalcon/api/encrypt/1"
   - "https://mycoolsalsafalcon/api/encrypt/2"     
 ... 
+```
+
+### Note that within a YAML structure nest, only the last salsafalconE will be used.
+### To include a second salsafalconE, nest them within separate structures, or otherwise modify the template.
+
+
+```
+---
+s1:
+  datasegment:
+    - "Honk honk honk"
+    - "More things, encoded images, whatevs."
+    - "Further things we want to send around."
+    - "Honk honk honk honk honk honk 2"
+  salsafalconE:
+    - "https://mycoolsalsafalcon/api/encrypt/2"     
+s2:
+  datasegment:
+    - "Honk honk honk"
+    - "More things, encoded images, whatevs."
+    - "Further things we want to send around."
+    - "Honk honk honk honk honk honk 2"
+  salsafalconE:
+    - "https://mycoolsalsafalcon/api/encrypt/1" 
+... 
+```
+
+### Also note that the output of the template is hex encoded by default. This does not mean that the encryption was successful or that the data is encrypted.
+### Check your hex output with xxd:
+```
+$ echo -n "7b227469746c65223a2022343034204e6f7420466f756e64227d" | xxd -r -p
+{"title": "404 Not Found"}$
 ```
 
 The salsa falcon/s used could be local and/or remote. I like to have remote salsa falcons with encrypt only set ups, and put the decrypt api elsewhere.
