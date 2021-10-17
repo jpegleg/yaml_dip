@@ -103,24 +103,14 @@ If you only want to decrypt or only want to encrypt, just leave out the YAML key
 
 ```
 ---
-salsamixer:
-
-  name:
-    - "do salsa20 on some YAML values"
-  executions:
-    HONKSET:
-      datasegment:
-        - "Honk honk honk"
-        - "More things, encoded images, whatevs."
-        - "Further things we want to send around."
-      salsafalconE:
-        - "https://mycoolsalsafalcon/api/encrypt/1"
-    HONKSET2:
-      datasegment:
-        - "Honk honk honk honk honk honk 2"
-      salsafalconE:
-        - "https://mycoolsalsafalcon/api/encrypt/1"
-        - "https://mycoolsalsafalcon/api/encrypt/2"     
+datasegment:
+  - "Honk honk honk"
+  - "More things, encoded images, whatevs."
+  - "Further things we want to send around."
+  - "Honk honk honk honk honk honk 2"
+salsafalconE:
+  - "https://mycoolsalsafalcon/api/encrypt/1"
+  - "https://mycoolsalsafalcon/api/encrypt/2"     
 ... 
 ```
 
