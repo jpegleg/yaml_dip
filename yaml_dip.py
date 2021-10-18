@@ -20,7 +20,7 @@ def timestamper():
     return (timestamp)
 
 class ProcessSalsa():
-    """ Send data to a salsa_falcon service to encrypt it twice. """
+    """ Send data to a salsa_falcon service to encrypt it. """
     def encrypt():
         """ Encrypt datasegment with remote salsa20 as defined in YAML."""
         try:
@@ -57,7 +57,7 @@ class ProcessSalsa():
 
 
 class DecryptSalsa():
-    """ Send data to a salsa_falcon service to decrypt it twice. """
+    """ Send data to a salsa_falcon service to decrypt it. """
     def decrypt():
         """ Decrypt eseg with remote salsa falcon as defined in YAML."""
         try:
