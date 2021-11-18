@@ -145,5 +145,9 @@ $ echo -n "7b227469746c65223a2022343034204e6f7420466f756e64227d" | xxd -r -p
 {"title": "404 Not Found"}$
 ```
 
+### Design concepts and tooling with salsa falcon
+
 The salsa falcon/s used could be local and/or remote. I like to have remote salsa falcons with encrypt only set ups, and put the decrypt api elsewhere.
-This creates nice control over the decryption mechanism and more importantly, the secret key and the ability to decrypt is never on the client or build systems, even if the original plaintext is on disk when the YAML stream is loaded.
+This creates nice control over the decryption mechanism and more importantly, the secret key and the ability to decrypt is never on the client or build systems, even if the original plaintext is on disk when the YAML stream is loaded. The salsa falcon and yaml dip are some pieces for custom network-bound or identity-bound, object encryption. The decryption routines can be different routes (URI contexts) per identity, or physically isolated to a specific network/system.
+
+
